@@ -19,12 +19,12 @@
 		</ul>
 
 		<div class="ui">
-			<h3>My Mind</h3>
+			<h3>My Mind脑图</h3>
 			<p>
-				<button data-command="New" title="New"><img src="icons/new.png" alt="New" /></button>
-				<button data-command="Load" title="Open"><img src="icons/open.png" alt="Open" /></button>
-				<button data-command="Save" title="Save"><img src="icons/save.png" alt="Save" /></button>
-				<button data-command="SaveAs" title="Save as"><img src="icons/save-as.png" alt="Save as" /></button>
+				<button data-command="New" title="新建"><img src="icons/new.png" alt="新建" /></button>
+				<button data-command="Load" title="打开"><img src="icons/open.png" alt="打开" /></button>
+				<button data-command="Save" title="保存"><img src="icons/save.png" alt="保存" /></button>
+				<button data-command="SaveAs" title="另存为"><img src="icons/save-as.png" alt="另存为" /></button>
 			</p>
 
 			<p>
@@ -76,9 +76,9 @@
 				</span>
 			</p>
 
-			<a id="github" href="https://github.com/ondras/my-mind" title="GitHub project page"><img src="github.png" alt="GitHub project page" /></a>
+			<a id="github" href="https://github.com/leangjia/my-mind" title="GitHub project page"><img src="github.png" alt="GitHub project page" /></a>
 			<button id="toggle" title="Toggle UI"></button>
-			<button data-command="Help" title="Help"><img src="icons/help.png" alt="Help" /></button>
+			<button data-command="Help" title="帮助"><img src="icons/help.png" alt="帮助" /></button>
 
 			<div id="throbber"></div>
 		</div>
@@ -92,20 +92,20 @@
 			</p>
 			
 			<div id="file">
-				<p class="desc">Local files are suitable for loading/saving files from other mindmapping applications.</p>
+				<p class="desc">本地文档即别的脑图应用程序的文档啦。</p>
 				<p data-for="save">
-					<span>Format</span>
+					<span>格式</span>
 					<select class="format"></select>
 				</p>
 				<p data-for="save load">
-					<button class="go"></button><button class="cancel">Cancel</button>
+					<button class="go"></button><button class="cancel">取消</button>
 				</p>
 			</div>
 
 			<div id="image">
-				<p class="desc">Export your design as a PNG image.</p>
+				<p class="desc">导出您在这里设计好的脑图为PNG图像文档。</p>
 				<p data-for="save">
-					<button class="go"></button><button class="cancel">Cancel</button>
+					<button class="go"></button><button class="cancel">取消</button>
 				</p>
 			</div>
 
@@ -116,17 +116,17 @@
 					<select class="list"></select>
 				</p>
 				<p data-for="save load">
-					<button class="go"></button><button class="cancel">Cancel</button>
+					<button class="go"></button><button class="cancel">取消</button>
 				</p>
 				<p data-for="load">
-					<button class="remove">Delete</button>
+					<button class="remove">删除</button>
 				</p>
 			</div>
 
 			<div id="firebase">
 				<p class="desc">Firebase offers real-time synchronization for true multi-user collaboration.</p>
 				<p data-for="save load">
-					<span>Server</span>
+					<span>第三方服务器</span>
 					<input type="text" class="server" />
 				</p>
 				<p data-for="save load">
@@ -144,10 +144,10 @@
 					<select class="list"></select>
 				</p>
 				<p data-for="save load">
-					<button class="go"></button><button class="cancel">Cancel</button>
+					<button class="go"></button><button class="cancel">取消</button>
 				</p>
 				<p data-for="load">
-					<button class="remove">Delete</button>
+					<button class="remove">删除</button>
 				</p>
 			</div>
 
@@ -158,7 +158,7 @@
 					<input type="text" class="url" />
 				</p>
 				<p data-for="save load">
-					<button class="go"></button><button class="cancel">Cancel</button>
+					<button class="go"></button><button class="cancel">取消</button>
 				</p>
 			</div>
 
@@ -169,7 +169,7 @@
 					<select class="format"></select>
 				</p>
 				<p data-for="save load">
-					<button class="go"></button><button class="cancel">Cancel</button>
+					<button class="go"></button><button class="cancel">取消</button>
 				</p>
 			</div>
 		</div>
@@ -191,16 +191,16 @@
 		</div>
 		
 		<div id="menu">
-			<button data-command="InsertChild"></button>
-			<button data-command="InsertSibling"></button>
-			<button data-command="Delete"></button>
+			<button data-command="InsertChild" title="插入子级"></button>
+			<button data-command="InsertSibling" title="插入同级"></button>
+			<button data-command="Delete" title="删除"></button>
 			<span></span>
-			<button data-command="Edit"></button>
-			<button data-command="Value"></button>
+			<button data-command="Edit" title="编辑"></button>
+			<button data-command="Value" title="参数值"></button>
 			<span></span>
-			<button data-command="Undo"></button>
-			<button data-command="Redo"></button>
-			<button data-command="Center"></button>
+			<button data-command="Undo" title="撤消"></button>
+			<button data-command="Redo" title="重做"></button>
+			<button data-command="Center" title="居中"></button>
 		</div>
 
 		<script>
